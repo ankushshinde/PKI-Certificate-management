@@ -197,3 +197,49 @@ Step 8: Double click on a certificate, the Certificate window appears which disp
 ![console-root8](console-root8.PNG)
 
 
+# Certificate Manager Tool
+
+This is another method to view the installed certificates by launching windows Certificate Manager Tool.
+
+Step 1: On your local machine > open command console > type certlm.msc (Certificate Manager tool for the local device appears)
+
+Step 2: Under Certificates – Local Computer > expand the directory for the type of certificate you want to view
+
+![certificate-manager-tool](certificate-manager-tool.PNG)
+
+![cert-info](cert-info.PNG)
+
+
+# How to determine if the site you are visiting uses SSL certificates
+
+Along with checking your own certificate, it is important to be able to determine, if the site you are visiting uses SSL certificates. Below are a few points which you should keep in mind to check if the site uses certificates:
+
+- Look for is the “https” in the URL of the site you are visiting. The “s” declares that this site is using an SSL Certificate.
+
+![site-security1](site-security1.PNG)
+
+- If you are Using Firefox > click on the padlock in the address bar > in the dropdown it should show secure connection, the secure connection indicates properly configured SSL is in use.
+
+![site-security2](site-security2.PNG)
+
+
+# How to check if an SSL certificate is valid
+
+SSL Certificates validity period is generally set to expire anywhere between one to three years. The validity period of the certificate completely depends on the company policy, cost considerations etc.
+
+There are multiple tools available to check the SSL certificates validity, in this article we will see how you can check the certificate validity by yourself.
+
+Option 1: This process is time-consuming.
+
+Run > certlm.msc > open Certificates Local Computer
+
+Go through the list of the certificates listed in the store to make sure only the legitimated ones are installed.
+
+Option 2: Download the Windows sysinternals utility,
+
+Use Windows Sysinternals utility called sigcheck > Download
+
+Once it is downloaded and installed > run command sigcheck -tv
+
+Sigcheck downloads the trusted Microsoft root certificate list and provide outputs for only valid certificates.
+
