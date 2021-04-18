@@ -69,3 +69,4 @@ The server decrypts the session key with its private key and sends the acknowled
 Thus, at the end of the SSL handshake, both the client and the server have a valid session key which they will use to encrypt or decrypt the original data.
 
 
+![ssl-handshake](SSL-HANDSHAKE.PNG)
