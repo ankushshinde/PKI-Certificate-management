@@ -186,7 +186,7 @@ Step 5: Select Local computer > click Finish.
 
 Step 6: At the “Add or Remove Snap-ins” window > click OK.
 
-![console-root6](console-root6)
+![console-root6](console-root6.PNG)
 
 Step 7: To view your certificates in the MMC snap-in > select a certificates store on the left pane. The available certificates are displayed on the middle pane.
 
